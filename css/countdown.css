@@ -1,0 +1,31 @@
+body { text-align: center; font-family:"宋体", arial;margin:0; padding:0;  font-size:12px; color:#000;}
+div,form,img,ul,ol,li,dl,dt,dd {margin: 0; padding: 0; border: 0; }
+li{list-style-type:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6 { margin:0; padding:0;font-size:12px; font-weight:normal;}
+header{display:none;position:absolute ;z-index:9999;width: 100%;height: 700px;overflow:hidden;-webkit-transition: all .5s ease .1s;}
+header a{color: #fff;text-decoration: none; font-family: 'HBM-Serenity';}
+img{float: left;}
+.wel{position: absolute;left: 10%;top: 40%;font-size: 4em;}
+.enter{position: absolute;right: 15%;top: 40%;font-size: 4em;}
+@keyframes font {
+    0%{
+        transform: skew(180deg);
+    }
+    100%{
+        transform: skew(0deg);
+    }
+}
+@font-face {
+    font-family: 'HBM-Serenity';
+    src:url('../font/HBM-Serenity-Symbolism.ttf')  ;
+    font-weight: normal;
+    font-style: normal;
+}
+.wel,.enter{animation: font 3s ease .1s;-webkit-animation: font 3s ease .1s;-moz-animation: font 3s ease .1s;}
+
+@media screen and (max-width: 800px){
+    header{height: 480px;}
+    .wel{left: 7%;}
+    .enter{right: 7%;}
+}
